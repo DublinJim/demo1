@@ -11,7 +11,7 @@ public class SceneSwitchMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader root = new FXMLLoader(SceneSwitchMain.class.getResource("scene.fxml"));
-        Scene scene = new Scene(root.load(), 320, 240);
+        Scene scene = new Scene(root.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
