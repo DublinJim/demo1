@@ -24,8 +24,7 @@ public class SceneController {
     @FXML
     public void switchToScene2() throws IOException {
         FXMLLoader root = new FXMLLoader(SceneSwitchMain.class.getResource("scene2.fxml"));
-
-        Stage window = (Stage) btn1.getScene().getWindow();
-        window.setScene(new Scene(root.load()));
+        Stage stage = (Stage) btn1.getScene().getWindow();
+        stage.setScene(new Scene(root.load()));
     }
 }
